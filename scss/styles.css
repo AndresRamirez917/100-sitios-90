@@ -33,7 +33,7 @@ ul {
   font-size: 3rem;
   text-align: left;
   font-weight: 300;
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 .container {
@@ -87,7 +87,10 @@ form input:focus {
   margin: 0 auto;
 }
 #mainheader .logo {
-  margin: 2rem 0;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 #mainheader .navbar ul {
   display: flex;
@@ -95,6 +98,8 @@ form input:focus {
   text-align: center;
 }
 #mainheader .navbar ul li {
+  display: block;
+  margin: 0 auto;
   text-align: center;
   margin-left: 2rem;
 }
@@ -112,12 +117,17 @@ form input:focus {
   height: 100vh;
 }
 #showcase .showcase-content {
-  color: #fff;
-  font-size: 4rem;
+  color: #9f9f9f;
   text-align: center;
-  margin: 3rem 0;
+}
+#showcase .showcase-content h1 {
+  font-size: 5rem;
+  padding-top: 15rem;
 }
 
+#couple .couple-content {
+  margin-bottom: 2rem;
+}
 #couple .couple-content img {
   width: 50%;
 }
@@ -127,6 +137,10 @@ form input:focus {
 }
 #couple .couple-content .couple-text h2 {
   margin-bottom: 1rem;
+  font-size: 4rem;
+}
+#couple .couple-content .couple-text p {
+  line-height: 30px;
 }
 
 #weeding-date {
@@ -134,14 +148,16 @@ form input:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 #weeding-date .weeding-date-content h2 {
   margin: 2rem 0;
+  padding: 3rem 0;
 }
 #weeding-date .weeding-date-content h1 {
-  color: #fff;
+  color: #848484;
   margin: 2rem 0;
+  padding: 2rem 0 4rem 0;
+  font-size: 5rem;
 }
 
 #rsvp {
