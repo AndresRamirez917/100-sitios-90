@@ -15,10 +15,17 @@ html, body {
 }
 
 a {
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-decoration: none;
     color: #000;
     font-weight: bold;
+}
+
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: rgba(238, 130, 238, 0.599);
+    text-decoration: underline;
 }
 
 ul {
@@ -78,13 +85,24 @@ form {
         cursor: pointer;
         margin: 2rem 0;
     }
-    .button:hover {
+    button:hover {
         background: #000000a7;
     }
     input:focus {
         border: 1px solid blue;
         outline: none;
     }
+    textarea:focus {
+        border: 1px solid blue;
+        outline: none;
+    }
+}
+
+::placeholder {
+    font-family: "Font Awesome 5 free";
+    font-weight: 600;
+    content: "\f007";
+    text-align: right;
 }
 
 //mainheader
@@ -96,6 +114,9 @@ form {
         display: block;
         margin: 0 auto;
         padding: 3rem 0;
+        font-family: "Pacifico";
+        font-size: 3rem;
+        font-weight: 300;
     }
     .navbar {
         ul {
@@ -157,8 +178,8 @@ form {
     }
 }
 
-//weeding-date
-#weeding-date {
+//weding-date
+#wedding-date {
     background: url("/img/countdown.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -192,5 +213,76 @@ form {
 #footer {
     text-align: center;
     padding: 3rem 0;
+}
+
+//cielito lindo
+/* css */
+/*!
+ * ScrollToTop v2.0
+ * Copyright 2019 zkreations
+ * Daniel Abel M. (fb.com/danieI.abel)
+ * Licensed under MIT (github.com/zkreations/plugins/blob/master/LICENSE)
+ */
+/*! Core (No modificar) {{*/
+.scrollToTop {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.scrollToTop svg {
+    display: block;
+}
+
+.scrollToTop {
+    position: fixed;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s, background .3s, -webkit-transform .3s;
+    transition: transform .3s, opacity .3s, background .3s;
+    transition: transform .3s, opacity .3s, background .3s, -webkit-transform .3s;
+    -webkit-transform: translateY(-2em);
+    transform: translateY(-2em);
+}
+
+.scrollToTop.visible {
+    pointer-events: all;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/*}} Fin del core {{*/
+
+/*! Personalización */
+/* Icono
+     -----------------------------------------*/
+.scrollToTop svg {
+    fill: #FFFFFF;
+    /* color */
+}
+
+/* Boton
+     -----------------------------------------*/
+.scrollToTop {
+    background-color: #cc7980;
+    /* fondo */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    /* sombra */
+    bottom: 1em;
+    /* separación inferior */
+    right: 1em;
+    /* separación derecha */
+    padding: .5em;
+    /* relleno */
+    border-radius: 4px;
+    /* borde redondeado */
+}
+
+.scrollToTop:hover {
+    background-color: #880509;
+    /* fondo (hover) */
 }
 
