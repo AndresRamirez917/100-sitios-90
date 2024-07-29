@@ -14,4 +14,20 @@
 }
 #mainheader .navbar .container {
   display: block;
+}
+
+#showcase .showcase-content h1 {
+  padding-top: 0;
+  font-size: 3rem;
+  padding-top: 10rem;
+}
+
+#couple .container .couple-content {
+  display: block;
+}
+#couple .container .couple-content img {
+  width: 100%;
+}
+#couple .container .couple-content .couple-text p {
+  text-align: justify;
 }/*# sourceMappingURL=mobile.css.map */

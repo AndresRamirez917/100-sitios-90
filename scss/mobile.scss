@@ -20,3 +20,31 @@
         }  
     }
 }
+
+//showcase
+#showcase {
+    .showcase-content {
+       h1 {
+        padding-top: 0;
+        font-size: 3rem;
+        padding-top: 10rem;
+       }
+    }
+}
+
+//couple
+#couple {
+    .container {
+        .couple-content {
+            display: block;
+            img {
+                width: 100%;
+            } 
+            .couple-text {
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
